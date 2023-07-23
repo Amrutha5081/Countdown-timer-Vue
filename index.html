@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="index.css">
+  <title>Countdown timer</title>
+  
+</head>
+<body>
+  <div id="app" class="container-fluid">
+    <div class="row justify-content-center align-items-center vh-100">
+      <div class="col-md-6">
+        <div class="card countdown-card">
+          <h2 class="text-center mb-4">Countdown Timer</h2>
+          <date-input v-on:date-updated="updateTargetDate"></date-input>
+          <countdown-timer v-bind:target-date="targetDate"></countdown-timer>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://unpkg.com/vue@2.6.14"></script>
+
+  <script src="index.js"></script>
+</body>
+</html>
